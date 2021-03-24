@@ -1,0 +1,78 @@
+###
+
+GET http://localhost:8080/apartments
+
+###
+
+POST http://localhost:8080/apartments
+Content-Type: application/json
+
+{
+  "room": 1,
+  "apartmentArea": 31.2,
+  "floor": 9,
+  "floorTotal": 19,
+  "favorite": true,
+  "price": 4046000,
+  "address": "пр-д Детский, д. 1.2",
+  "metroStation": null,
+  "distanceToMetro": null,
+  "residentialComplex": "ЖК 'Станция спортивная'",
+  "agencyName": null,
+  "urlEmblem": null,
+  "verifiedRegistry": false
+}
+
+###
+
+POST http://localhost:8080/apartments
+Content-Type: application/json
+
+{
+  "room": 1,
+  "apartmentArea": 33,
+  "floor": 17,
+  "floorTotal": 19,
+  "favorite": true,
+  "price": 4350000,
+  "address": "пр-д Альберта Камалеева, д. 32Б",
+  "metroStation": "Горки,",
+  "distanceToMetro": 2.5,
+  "residentialComplex": "ЖК Казань XXI век",
+  "agencyName": "Агенство недвижимости Ключ",
+  "urlEmblem": "http:/",
+  "verifiedRegistry": false
+}
+
+###
+
+POST http://localhost:8080/apartments
+Content-Type: application/json
+
+{
+  "room": 3,
+  "apartmentArea": 132.1,
+  "floor": 4,
+  "floorTotal": 5,
+  "favorite": true,
+  "price": 21150000,
+  "address": "ул. Карла Маркса, д. 39А",
+  "metroStation": "Площадь Тукая,",
+  "distanceToMetro": 1.1,
+  "residentialComplex": null,
+  "agencyName": "Агенство недвижимости Ключ",
+  "urlEmblem": "http:/",
+  "verifiedRegistry": true
+}
+
+###
+
+GET http://localhost:8080/apartments/search?minPrice=3000000&maxPrice=4200000
+
+###
+
+GET http://localhost:8080/apartments/search?minPrice=4200000&maxPrice=7000000
+
+###
+
+GET http://localhost:8080/apartments/search?minPrice=7000000&maxPrice=30000000
