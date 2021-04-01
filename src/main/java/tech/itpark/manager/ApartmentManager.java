@@ -1,15 +1,10 @@
 package tech.itpark.manager;
 
-import org.apache.tomcat.jni.Time;
 import tech.itpark.domain.Apartment;
 import tech.itpark.domain.ApartmentCreate;
 
-import java.time.Clock;
-import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
-
-import static org.apache.tomcat.jni.Time.*;
 
 public class ApartmentManager {
     private long nextId = 1;

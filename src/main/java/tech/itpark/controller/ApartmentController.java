@@ -10,7 +10,6 @@ import java.util.ArrayList;
 @RestController
 public class ApartmentController {
     private ApartmentManager manager = new ApartmentManager();
-    private ArrayList<Apartment> result;
 
     @GetMapping("/apartments")
     public ArrayList<Apartment> getUsers() {
