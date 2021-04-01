@@ -3,6 +3,8 @@ package tech.itpark.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.time.OffsetDateTime;
+
 @AllArgsConstructor
 @Data
 public class Apartment {

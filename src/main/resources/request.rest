@@ -8,6 +8,7 @@ POST http://localhost:8080/apartments
 Content-Type: application/json
 
 {
+  "url": "http://",
   "room": 1,
   "apartmentArea": 31.2,
   "floor": 9,
@@ -15,12 +16,14 @@ Content-Type: application/json
   "favorite": true,
   "price": 4046000,
   "address": "пр-д Детский, д. 1.2",
-  "metroStation": null,
-  "distanceToMetro": null,
+  "metroStation": "",
+  "distanceToMetro": "",
+  "distanceUnit": "",
   "residentialComplex": "ЖК 'Станция спортивная'",
-  "agencyName": null,
-  "urlEmblem": null,
-  "verifiedRegistry": false
+  "agencyName": "",
+  "urlEmblem": "",
+  "verifiedRegistry": false,
+  "placementTimeUnit": "4 дня назад"
 }
 
 ###
@@ -29,6 +32,7 @@ POST http://localhost:8080/apartments
 Content-Type: application/json
 
 {
+  "url": "http://",
   "room": 1,
   "apartmentArea": 33,
   "floor": 17,
@@ -38,10 +42,12 @@ Content-Type: application/json
   "address": "пр-д Альберта Камалеева, д. 32Б",
   "metroStation": "Горки,",
   "distanceToMetro": 2.5,
+  "distanceUnit": " км.",
   "residentialComplex": "ЖК Казань XXI век",
   "agencyName": "Агенство недвижимости Ключ",
   "urlEmblem": "http:/",
-  "verifiedRegistry": false
+  "verifiedRegistry": false,
+  "placementTimeUnit": "28 минут назад"
 }
 
 ###
@@ -50,6 +56,7 @@ POST http://localhost:8080/apartments
 Content-Type: application/json
 
 {
+  "url": "http://",
   "room": 3,
   "apartmentArea": 132.1,
   "floor": 4,
@@ -59,10 +66,12 @@ Content-Type: application/json
   "address": "ул. Карла Маркса, д. 39А",
   "metroStation": "Площадь Тукая,",
   "distanceToMetro": 1.1,
-  "residentialComplex": null,
+  "distanceUnit": " км.",
+  "residentialComplex": "",
   "agencyName": "Агенство недвижимости Ключ",
   "urlEmblem": "http:/",
-  "verifiedRegistry": true
+  "verifiedRegistry": true,
+  "placementTimeUnit": "13 минут назад"
 }
 
 ###

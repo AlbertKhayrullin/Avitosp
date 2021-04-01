@@ -7,6 +7,7 @@ import lombok.Data;
 @AllArgsConstructor
 
 public class ApartmentCreate {
+    private String url;
     private int room;
     private double apartmentArea;
     private int floor;
@@ -16,8 +17,10 @@ public class ApartmentCreate {
     private String address;
     private String metroStation;
     private double distanceToMetro;
+    private String distanceUnit;
     private String residentialComplex;
     private String agencyName;
     private String urlEmblem;
     private boolean verifiedRegistry;
+    private String placementTimeUnit;
 }

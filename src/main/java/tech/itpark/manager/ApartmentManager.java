@@ -1,10 +1,15 @@
 package tech.itpark.manager;
 
+import org.apache.tomcat.jni.Time;
 import tech.itpark.domain.Apartment;
 import tech.itpark.domain.ApartmentCreate;
 
+import java.time.Clock;
+import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
+
+import static org.apache.tomcat.jni.Time.*;
 
 public class ApartmentManager {
     private long nextId = 1;
@@ -13,7 +18,7 @@ public class ApartmentManager {
     public Apartment register(ApartmentCreate dto) {
         Apartment apartment = new Apartment(
                 nextId++,
-                "http://",
+                dto.getUrl(),
                 dto.getRoom(),
                 "-к.",
                 dto.getApartmentArea(),
@@ -29,12 +34,12 @@ public class ApartmentManager {
                 dto.getAddress(),
                 dto.getMetroStation(),
                 dto.getDistanceToMetro(),
-                "км.",
+                dto.getDistanceUnit(),
                 dto.getAgencyName(),
                 dto.getUrlEmblem(),
                 OffsetDateTime.now().toEpochSecond(),
-                "секунд назад"
-                );
+                dto.getPlacementTimeUnit()
+        );
         apartments.add(apartment);
         return apartment;
     }
